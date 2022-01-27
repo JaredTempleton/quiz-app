@@ -14,33 +14,33 @@ let questions = [
     {
         question: 'What is 2 + 2',
         choice1: '1',
-        choice1: '1',
-        choice1: '1',
-        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
         answer: 1,
     },
     {
         question: 'What is 2 + 2',
         choice1: '1',
-        choice1: '1',
-        choice1: '1',
-        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
         answer: 1,
     },
     {
         question: 'What is 2 + 2',
         choice1: '1',
-        choice1: '1',
-        choice1: '1',
-        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
         answer: 1,
     },
     {
         question: 'What is 2 + 2',
         choice1: '1',
-        choice1: '1',
-        choice1: '1',
-        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
         answer: 1,
     }
 ]
@@ -63,8 +63,8 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-    progressText.innerText = `question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
     const questionsIndex = Math.floor(Math.random()  * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]

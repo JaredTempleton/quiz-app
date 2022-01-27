@@ -96,10 +96,10 @@ choices.forEach(choice => {
             incrementScore(SCORE_POINTS)
         }
 
-        selectedChoice.parentElement.classlist.add(classToApply)
+        selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout(() => {
-            selectedChoice.parentElement.classlist.remove(classToApply)
+            selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
         
         }, 1000)

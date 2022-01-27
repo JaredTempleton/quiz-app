@@ -18,4 +18,4 @@ THEN I can save my initials and score
 
 LINK: https://jaredtempleton.github.io/quiz-app/
 
-![HERE](https://imgur.com/NXvaW23)
+![HERE](https://i.imgur.com/NXvaW23.png)
